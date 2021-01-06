@@ -28,7 +28,7 @@ public class APIRestTest {
     public void shouldReturnTasksSuccessfully(){
         RestAssured.given()
                 .contentType(ContentType.JSON)
-                .body("{\"task\": \"Teste via API\", \"dueDate\": \"2021-01-03\"}")
+                .body("{\"task\": \"Teste via API\", \"dueDate\": \"2100-01-03\"}")
                 .when()
                 .post("/todo")
                 .then()
